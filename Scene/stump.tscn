@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cmtvcd2oxrvjc"]
+
+[ext_resource type="Texture2D" uid="uid://67ddi8t7rlr0" path="res://Asset/free-swamp-game-tileset-pixel-art/3 Objects/Boxes/2.png" id="1_ucnla"]
+
+[node name="Stump" type="Area2D" unique_id=1962707986]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1405092808]
+texture_filter = 1
+position = Vector2(1, -1)
+scale = Vector2(4, 5.474)
+texture = ExtResource("1_ucnla")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=2072395207]
+position = Vector2(1, -1)
+scale = Vector2(4, 5.474)
+polygon = PackedVector2Array(-17, -13.5, -17, 13.5, 17, 13.5, 17, -13.5)

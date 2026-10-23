@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b4fqtlkb4toqx"]
+
+[ext_resource type="Texture2D" uid="uid://bca410kkb4h8i" path="res://Asset/jungle_pixel_art_asset_pack_16x16/Individual_Layers_bg/ground.png" id="1_jayga"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jc63w"]
+size = Vector2(2296, 88)
+
+[node name="ground" type="StaticBody2D" unique_id=1548569573]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1080629466]
+position = Vector2(1141, 618)
+shape = SubResource("RectangleShape2D_jc63w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=161608848]
+position = Vector2(1146, 608)
+texture = ExtResource("1_jayga")

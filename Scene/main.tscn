@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://crurnf5e4mjuv"]
+
+[ext_resource type="Script" uid="uid://dtu4phqslwssu" path="res://Script/main.gd" id="1_2wwxx"]
+[ext_resource type="PackedScene" uid="uid://b4fqtlkb4toqx" path="res://Scene/ground.tscn" id="1_r34rm"]
+[ext_resource type="PackedScene" uid="uid://cy3l1yuica84u" path="res://Scene/dino.tscn" id="2_2wwxx"]
+[ext_resource type="PackedScene" uid="uid://cyhv5m5vbw0ub" path="res://Scene/bg.tscn" id="3_3amdw"]
+[ext_resource type="PackedScene" uid="uid://mmw2ej8melii" path="res://Scene/hud.tscn" id="5_3amdw"]
+[ext_resource type="PackedScene" uid="uid://dfw8filx0bwlg" path="res://Scene/game_over.tscn" id="6_1xcnr"]
+
+[node name="Main" type="Node" unique_id=812451997]
+script = ExtResource("1_2wwxx")
+
+[node name="ground" parent="." unique_id=1548569573 instance=ExtResource("1_r34rm")]
+
+[node name="Dino" parent="." unique_id=1488998283 instance=ExtResource("2_2wwxx")]
+position = Vector2(104, 460)
+slide_on_ceiling = false
+
+[node name="Bg" parent="." unique_id=1427077240 instance=ExtResource("3_3amdw")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1432032954]
+position = Vector2(576, 324)
+
+[node name="HUD" parent="." unique_id=1753930335 instance=ExtResource("5_3amdw")]
+
+[node name="GameOver" parent="." unique_id=1122367957 instance=ExtResource("6_1xcnr")]
+process_mode = 2
